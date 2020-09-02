@@ -58,7 +58,26 @@ export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
                        ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```  
-  
+
+
+### CUDA 삭제
+```
+sudo apt-get --purge remove 'cuda*'
+sudo apt-get autoremove --purge 'cuda*'
+```
+
+### CUDA 파일 삭제
+```
+sudo rm -rf /usr/local/cuda
+or
+sudo rm -rf /usr/local/cuda-10.0
+```
+
+### Ndivia driver 삭제
+```
+sudo apt-get remove --purge '^nvidia-.*' 
+``` 
+
 *******************************************************
 참고 사이트  
 https://webnautes.tistory.com/1428  
