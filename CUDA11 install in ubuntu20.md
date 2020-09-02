@@ -11,22 +11,20 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 9 --slave /us
 
 sudo update-alternatives --config gcc  
 ```
-<br>
+  
 ## 2. NVIDIA 드라이버를 설치
 다음 명령으로 현재 사용중인 그래픽 카드에 설치할 수 있는 드라이버를 확인(driver 항목 중 recommended가 붙은 드라이버를 선택)  
 ```
 ubuntu-drivers devices
 ```
-<br>
+  
 해당 버전의 드라이버를 설치한다.  
 ```
 sudo apt install nvidia-driver-450  
 ```
 --> 소프트웨어 & 업데이트 에서 해당 드라이버를 사용하고 있지 않으면 선택 후 재부팅해야한다.  
 터미널에서 nvidia-smi 명령을 실행하여 설치한 드라이버 버전이 맞는지 확인  
-
-<br>
-
+  
 ## 3. CUDA Toolkit을 설치
 ```
 sudo apt update  
@@ -39,12 +37,12 @@ sudo add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/r
 
 sudo apt install cuda  
 ```
-<br>
+  
 cudnn이 있는지 확인  
 ```
 cat /usr/local/cuda-11.0/include/cudnn.h | grep CUDNN_MAJOR -A 2  
 ```
-<br>
+  
 cudnn이 확인되지 않을 시 https://developer.nvidia.com/rdp/cudnn-archive 에서 다운 받음
 ```
 sudo cp include /cudnn.h /usr/local/cuda-11.0/include  
@@ -52,7 +50,7 @@ sudo cp lib64/libcudnn* /usr/local/cuda-11.0/lib64
 
 sudo chmod a+r /usr/local/cuda-11.0/include/cudnn.h /usr/local/cuda-11.0/lib64/libcudnn*  
 ```
-
+  
 *******************************************************
 참고 사이트  
 https://webnautes.tistory.com/1428  
