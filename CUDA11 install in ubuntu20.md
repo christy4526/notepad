@@ -45,7 +45,7 @@ cat /usr/local/cuda-11.0/include/cudnn.h | grep CUDNN_MAJOR -A 2
   
 cudnn이 확인되지 않을 시 https://developer.nvidia.com/rdp/cudnn-archive 에서 다운 받음
 ```
-sudo cp include /cudnn.h /usr/local/cuda-11.0/include  
+sudo cp include/cudnn.h /usr/local/cuda-11.0/include  
 sudo cp lib64/libcudnn* /usr/local/cuda-11.0/lib64  
 
 sudo chmod a+r /usr/local/cuda-11.0/include/cudnn.h /usr/local/cuda-11.0/lib64/libcudnn*  
