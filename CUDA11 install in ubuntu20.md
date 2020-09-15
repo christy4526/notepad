@@ -81,4 +81,3 @@ sudo apt-get remove --purge '^nvidia-.*'
 참고 사이트  
 https://webnautes.tistory.com/1428  
 https://likecode.tistory.com/306?category=727941  
-
