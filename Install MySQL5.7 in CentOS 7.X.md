@@ -1,5 +1,6 @@
 # CentOS 7.x MySQL 5.7 설치
-* 참고링크  
+
+참고링크  
 - https://cherrypick.co.kr/how-to-install-mysql5-7-in-centos7/  
 - https://mosei.tistory.com/entry/MySQL-57-세팅-CentOS7  
 
