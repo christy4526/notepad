@@ -64,6 +64,5 @@ ALLOWED_HOSTS = '*'
 
 # ufw allow 8000/tcp
 ```
-  
 
 참고 : https://znznzn.tistory.com/42
